@@ -16,5 +16,11 @@ module.exports = {
   ],
   plugins: ['prettier'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    // Prettier adds slash at end and so we need to turn this off or it will conflict
+    'vue/html-self-closing': 'off',
+
+    // Prettier has an indent already set so this conflicts with it
+    'vue/html-indent': 'off'
+  },
 }
