@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <p>Hippolyte Thomas</p>
+    <p>Hippolyte<span style="font-weight: bold">Thomas</span></p>
   </div>
 </template>
 

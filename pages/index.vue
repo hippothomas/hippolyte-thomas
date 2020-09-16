@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1 class="title">hippolyte-thomas</h1>
+  <div class="wrapper">
+    <Profile />
   </div>
 </template>
 
@@ -16,4 +16,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.wrapper {
+  width: 100vw;
+  height: calc(100vh - 125px);
+}
+</style>

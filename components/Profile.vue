@@ -1,0 +1,96 @@
+<template>
+  <div class="container">
+    <div class="photo"></div>
+    <div class="text">
+      <div class="name">Hippolyte Thomas</div>
+      <div class="wr-wrapper">
+        <div class="work">Développeur FullStack</div>
+        <div class="res">
+          <a
+            href="https://www.linkedin.com/in/hippolyte-thomas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="~/static/assets/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/hippothomas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="~/static/assets/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+      <div class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+        dignissim mi auctor, ornare ipsum id, tempor lorem. Quisque vehicula
+        odio eu turpis pulvinar, eu lobortis velit rhoncus.
+      </div>
+      <nuxt-link to="/" class="more">En savoir plus</nuxt-link>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.container {
+  width: 705px;
+  margin: auto;
+  padding-top: calc(50vh - 190px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .photo {
+  background: url('../static/assets/profile.jpg') 100% 100%;
+  background-size: 100%;
+  object-fit: contain;
+  width: 212px;
+  height: 212px;
+  border-radius: 106px;
+}
+
+.container .text {
+  width: calc(100% - 212px - 30px);
+  padding-bottom: 12px;
+}
+.container .text .name {
+  font-size: 30px;
+}
+.container .text .wr-wrapper {
+  display: flex;
+}
+
+.work {
+  font-weight: 300;
+  color: var(--purple);
+  margin: 5px 10px 5px 0;
+}
+
+.res {
+  height: 21px;
+  margin-top: 5px;
+}
+.res a img {
+  height: 23px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+a.more {
+  background-color: var(--purple);
+  padding: 10px 21px;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+
+  transition: color 0.5s, background 0.5s;
+}
+a.more:hover {
+  color: var(--purple);
+  background: #fff;
+}
+</style>
