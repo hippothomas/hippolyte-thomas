@@ -8,6 +8,12 @@ body {
   --purple: #5647b2;
 }
 
-a {
-  color: #3579df;
+/* Page Transition */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }

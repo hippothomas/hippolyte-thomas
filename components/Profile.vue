@@ -76,7 +76,8 @@
 }
 
 .description {
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 a.more {

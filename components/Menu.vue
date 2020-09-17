@@ -3,7 +3,7 @@
     <div class="links">
       <nuxt-link to="/">Projets</nuxt-link>
       <nuxt-link to="/">À propos</nuxt-link>
-      <nuxt-link to="/">Contact</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
     </div>
   </div>
 </template>
