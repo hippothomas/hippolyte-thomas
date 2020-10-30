@@ -27,7 +27,7 @@
         dignissim mi auctor, ornare ipsum id, tempor lorem. Quisque vehicula
         odio eu turpis pulvinar, eu lobortis velit rhoncus.
       </div>
-      <nuxt-link to="/" class="more">En savoir plus</nuxt-link>
+      <nuxt-link to="/a-propos" class="more">En savoir plus</nuxt-link>
     </div>
   </div>
 </template>

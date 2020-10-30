@@ -8,6 +8,14 @@ body {
   --purple: #5647b2;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 /* Page Transition */
 .page-enter-active,
 .page-leave-active {
