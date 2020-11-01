@@ -26,8 +26,29 @@
     </div>
 
     <div class="section">
-      <h2>Mes Passions</h2>
-      <p>Développement - Secourisme - Lecture - Sport</p>
+      <h2>Bénévolat</h2>
+      <div class="benevolat">
+        <div class="image">
+          <img
+            src="~/static/assets/protection-civile.jpg"
+            alt="Hippolyte Thomas - Protection Civile"
+          />
+          <figcaption>
+            Photographe :
+            <a
+              href="https://www.instagram.com/charles_marion_photographe/"
+              target="_blank"
+            >
+              Charles Marion
+            </a>
+          </figcaption>
+        </div>
+        <div class="informations">
+          <div class="association">Protection Civile</div>
+          <div class="title">Secouriste</div>
+          <div class="date">mai 2018 - novembre 2019</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -66,5 +87,38 @@
 }
 .section p a {
   color: var(--purple);
+}
+.benevolat {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 35px;
+  width: 374px;
+}
+.benevolat .image img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+.benevolat .image figcaption {
+  font-weight: 100;
+  font-size: 9px;
+  text-align: center;
+  max-width: 150px;
+}
+.benevolat .image figcaption a {
+  color: #000;
+}
+.benevolat .informations {
+  margin-top: -15px;
+  margin-left: 15px;
+}
+.benevolat .informations .title {
+  font-weight: 500;
+}
+.benevolat .informations .date {
+  font-weight: 100;
 }
 </style>
