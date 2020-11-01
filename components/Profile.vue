@@ -20,12 +20,19 @@
           >
             <img src="~/static/assets/github.png" alt="GitHub" />
           </a>
+          <a
+            href="https://gitlab.com/hippolyte.thomas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="~/static/assets/gitlab.png" alt="GitLab" />
+          </a>
         </div>
       </div>
       <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        dignissim mi auctor, ornare ipsum id, tempor lorem. Quisque vehicula
-        odio eu turpis pulvinar, eu lobortis velit rhoncus.
+        Passionné d'informatique, je suis actuellement étudiant en 4ème année à
+        l'EPSI pour passer le titre RNCP de Niveau VII : Expert en Informatique
+        et Système d’Information.
       </div>
       <nuxt-link to="/a-propos" class="more">En savoir plus</nuxt-link>
     </div>

@@ -8,60 +8,17 @@
     <div class="section">
       <h2>Présentation</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
-        mi non diam ornare tincidunt quis sed nibh. Phasellus posuere ipsum leo,
-        sit amet hendrerit sapien cursus ut. Ut ultricies, velit in vestibulum
-        pulvinar, lorem mauris facilisis est, eu ultricies urna tellus in odio.
-        Maecenas elit sapien, tristique sollicitudin massa ut, ornare cursus
-        libero. Suspendisse a velit pretium, pulvinar magna ac, feugiat augue.
-        Sed porta neque eget eros cursus sagittis. Praesent neque dui, convallis
-        a convallis vitae, fermentum sed lorem. Suspendisse urna dolor,
-        tincidunt nec dictum eget, porttitor ac ligula.
+        Passionné d'informatique, je suis actuellement étudiant en 4ème année à
+        l'EPSI pour passer le titre RNCP de Niveau VII : Expert en Informatique
+        et Système d’Information. Durant cette formation, je suis en alternance
+        en tant que Concepteur Développeur d'Applications chez
+        <a href="https://www.web-ia.com/" target="_blank">Web IA</a>, agence web
+        web nantaise, dans laquelle je participe à de multiples missions de
+        conception et de développement de sites wordpress pour nos clients. J'ai
+        auparavant aussi travaillé en tant de Développeur Web chez
+        <a href="https://www.ae2agence.com/" target="_blank">AE2Agence</a>.
       </p>
-      <div class="chrono">
-        <Chronology />
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Mes compétances</h2>
-      <div class="comp-list">
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">PHP</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">JavaScript</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">Python</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">Java</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">Vue.js</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">
-            MySQL<br />
-            & Oracle
-          </div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">React Native</div>
-        </div>
-        <div class="comp">
-          <img src="#" alt="#" />
-          <div class="title">C#</div>
-        </div>
-      </div>
+      <Chronology />
     </div>
 
     <div class="section">
@@ -77,7 +34,7 @@
 
 <style scoped>
 .wrapper {
-  width: 100vw;
+  width: 100%;
 }
 .head-title {
   margin: 30px auto;
@@ -107,10 +64,7 @@
   margin: 15px auto;
   text-align: justify;
 }
-.comp-list {
-  width: 100%;
-  max-width: 800px;
-  display: flex;
-  justify-content: space-between;
+.section p a {
+  color: var(--purple);
 }
 </style>
