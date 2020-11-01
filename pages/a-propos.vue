@@ -19,7 +19,7 @@
         tincidunt nec dictum eget, porttitor ac ligula.
       </p>
       <div class="chrono">
-        <p><i>Chronologie</i></p>
+        <Chronology />
       </div>
     </div>
 
@@ -93,6 +93,9 @@
   background: #000;
   margin: auto;
   margin-top: 10px;
+}
+.section {
+  margin-bottom: 60px;
 }
 .section h2 {
   text-align: center;
