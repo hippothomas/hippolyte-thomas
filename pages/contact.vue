@@ -25,7 +25,7 @@
 <style scoped>
 .wrapper {
   width: 100vw;
-  height: calc(100vh - 125px);
+  height: calc(100vh - 125px - 34px);
 }
 
 #contact {
