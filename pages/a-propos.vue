@@ -13,7 +13,7 @@
         et Système d’Information. Durant cette formation, je suis en alternance
         en tant que Concepteur Développeur d'Applications chez
         <a href="https://www.web-ia.com/" target="_blank">Web IA</a>, agence web
-        web nantaise, dans laquelle je participe à de multiples missions de
+        nantaise, dans laquelle je participe à de multiples missions de
         conception et de développement de sites wordpress pour nos clients. J'ai
         auparavant aussi travaillé en tant de Développeur Web chez
         <a href="https://www.ae2agence.com/" target="_blank">AE2Agence</a>.
@@ -23,6 +23,7 @@
 
     <div class="section">
       <h2>Mon Parcours</h2>
+      <Career />
     </div>
 
     <div class="section">

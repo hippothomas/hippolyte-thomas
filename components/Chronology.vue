@@ -5,7 +5,10 @@
   >
     <div v-for="item in items" :key="item.id" class="timeline">
       <div class="infos">
-        {{ item.date }} - <a :href="item.school.link">{{ item.school.name }}</a>
+        {{ item.date }} -
+        <a :href="item.school.link" target="_blank" rel="noopener noreferrer">
+          {{ item.school.name }}
+        </a>
       </div>
       <div class="title">{{ item.title }}</div>
     </div>
