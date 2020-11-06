@@ -54,6 +54,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'À propos - Hippolyte Thomas',
+  },
+};
+</script>
+
 <style scoped>
 .wrapper {
   width: 100%;

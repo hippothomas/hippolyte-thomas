@@ -22,6 +22,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'Contact - Hippolyte Thomas',
+  },
+};
+</script>
+
 <style scoped>
 .wrapper {
   width: 100vw;
