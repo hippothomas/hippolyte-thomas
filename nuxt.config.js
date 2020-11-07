@@ -54,6 +54,7 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
   /*
    ** Content module configuration
@@ -65,4 +66,12 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  /*
+   ** Sitemap Configuration
+   ** See https://github.com/nuxt-community/sitemap-module#readme
+   */
+  sitemap: {
+    path: '/sitemap.xml', // L'emplacement du fichier sitemap.
+    exclude: ['/admin/**'], // Pages à exlure de l'indexation.
+  },
 };

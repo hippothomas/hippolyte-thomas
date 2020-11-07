@@ -1,4 +1,6 @@
 # Hippolyte Thomas
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d3f3a85d-d0ec-44e1-81e8-c23770e8a972/deploy-status)](https://app.netlify.com/sites/hippolyte-thomas/deploys)
+
 Site perso : [hippolyte-thomas.fr](https://hippolyte-thomas.fr/)
 
 Stack :
