@@ -55,6 +55,7 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
   /*
    ** Content module configuration
@@ -74,5 +75,13 @@ export default {
     path: '/sitemap.xml', // L'emplacement du fichier sitemap.
     hostname: process.env.WEBSITE_URL, // L'adresse du site.
     exclude: ['/admin/**'], // Pages à exlure de l'indexation.
+  },
+  /*
+   ** Robot.txt Configuration
+   ** See https://github.com/nuxt-community/robots-module#readme
+   */
+  robots: {
+    Disallow: ['/admin'],
+    Sitemap: `${process.env.WEBSITE_URL}/sitemap.xml`,
   },
 };
