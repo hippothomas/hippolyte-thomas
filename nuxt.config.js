@@ -72,6 +72,7 @@ export default {
    */
   sitemap: {
     path: '/sitemap.xml', // L'emplacement du fichier sitemap.
+    generate: true,
     exclude: ['/admin/**'], // Pages à exlure de l'indexation.
   },
 };
