@@ -101,4 +101,30 @@ a.more:hover {
   color: var(--purple);
   background: #fff;
 }
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .container .photo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .container .text .name {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .container .text {
+    width: calc(100% - 50px);
+  }
+}
 </style>

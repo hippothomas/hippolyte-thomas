@@ -25,4 +25,19 @@
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .logo p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .logo {
+    padding: 8px;
+  }
+  .logo p {
+    font-size: 16px;
+  }
+}
 </style>

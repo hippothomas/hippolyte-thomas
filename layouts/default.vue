@@ -36,4 +36,10 @@
   color: #000;
   padding-bottom: 15px;
 }
+
+@media only screen and (max-width: 630px) {
+  .header-logo {
+    left: 10px;
+  }
+}
 </style>

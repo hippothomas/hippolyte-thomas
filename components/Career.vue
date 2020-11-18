@@ -66,4 +66,27 @@ export default {
 .career .right {
   width: calc((100% / 2) - 6px);
 }
+
+@media only screen and (max-width: 815px) {
+  .right {
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .career .left,
+  .career .right {
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .career .left,
+  .career .right {
+    width: 100%;
+  }
+  .career .center {
+    display: none;
+  }
+}
 </style>

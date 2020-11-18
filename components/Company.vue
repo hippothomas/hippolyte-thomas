@@ -43,11 +43,13 @@ export default {
 }
 .left .comp-wrapper {
   flex-direction: row;
-  margin-bottom: 300px;
+  /* margin-bottom: 300px; */
+  margin-bottom: 150px;
 }
 .right .comp-wrapper {
   flex-direction: row-reverse;
-  margin-top: 300px;
+  /* margin-top: 300px; */
+  margin-top: 150px;
 }
 .company {
   width: 300px;
@@ -80,5 +82,28 @@ export default {
   height: 70px;
   width: calc(100% - 300px);
   border-bottom: 3px solid var(--purple);
+}
+
+@media only screen and (max-width: 815px) {
+  .right .comp-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .line {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .line {
+    display: none;
+  }
+  .company {
+    width: 100%;
+    margin: 15px;
+    padding: 10px 15px;
+  }
 }
 </style>

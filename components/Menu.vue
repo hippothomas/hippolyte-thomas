@@ -28,4 +28,19 @@
 #navigation .links a:hover {
   color: #626262;
 }
+
+@media only screen and (max-width: 630px) {
+  #navigation {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #navigation {
+    font-size: 14px;
+  }
+  #navigation .links a {
+    margin: 0 6px;
+  }
+}
 </style>

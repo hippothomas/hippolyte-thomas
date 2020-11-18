@@ -83,4 +83,20 @@ export default {
 .chronology .timeline .title {
   font-weight: 500;
 }
+
+@media only screen and (max-width: 530px) {
+  .chronology {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .chronology {
+    padding-bottom: 15px;
+  }
+  .chronology .timeline {
+    height: 80px;
+  }
+}
 </style>

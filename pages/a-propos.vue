@@ -137,4 +137,20 @@ export default {
 .benevolat .informations .date {
   font-weight: 100;
 }
+
+@media only screen and (max-width: 815px) {
+  .section p {
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .benevolat {
+    flex-direction: column;
+    width: 100%;
+  }
+  .benevolat .image {
+    margin-bottom: 24px;
+  }
+}
 </style>
