@@ -26,6 +26,13 @@
 export default {
   head: {
     title: 'Contact - Hippolyte Thomas',
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.WEBSITE_URL + '/contact',
+      },
+    ],
   },
 };
 </script>

@@ -25,7 +25,18 @@ export default {
           "Passionné d'informatique, je suis actuellement une formation de développeur à l'EPSI en alternance chez Web IA.",
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.WEBSITE_URL,
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -77,7 +88,7 @@ export default {
     exclude: ['/admin/**'], // Pages à exlure de l'indexation.
   },
   /*
-   ** Robot.txt Configuration
+   ** Robots.txt Configuration
    ** See https://github.com/nuxt-community/robots-module#readme
    */
   robots: {

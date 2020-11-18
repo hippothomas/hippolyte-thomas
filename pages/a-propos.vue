@@ -58,6 +58,13 @@
 export default {
   head: {
     title: 'À propos - Hippolyte Thomas',
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.WEBSITE_URL + '/a-propos',
+      },
+    ],
   },
 };
 </script>

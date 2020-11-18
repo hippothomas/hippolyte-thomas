@@ -22,3 +22,10 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Variables d'environnements
+
+```
+WEBSITE_URL --> Url du site
+
+```
