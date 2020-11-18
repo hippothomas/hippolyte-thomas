@@ -1,6 +1,12 @@
 <template>
   <div class="wrapper">
-    <form id="contact" name="contact" method="POST" netlify>
+    <form
+      id="contact"
+      name="contact"
+      method="POST"
+      action="?post=sucess"
+      data-netlify="true"
+    >
       <input type="text" name="nom" placeholder="Votre nom*" required />
       <input
         type="email"
@@ -8,7 +14,6 @@
         placeholder="Votre adresse email*"
         required
       />
-      <input type="text" name="sujet" placeholder="Sujet" />
       <textarea
         name="message"
         cols="30"
@@ -17,7 +22,7 @@
         required
       >
       </textarea>
-      <button type="submit">Envoyer</button>
+      <input type="submit" value="Envoyer" />
     </form>
   </div>
 </template>
@@ -47,7 +52,7 @@ export default {
   width: 80vw;
   max-width: 600px;
   margin: auto;
-  padding-top: 90px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +80,7 @@ export default {
 #contact input:focus {
   outline: none;
 }
-#contact button {
+#contact input[type='submit'] {
   background-color: var(--purple);
   width: fit-content;
   padding: 10px 21px;
@@ -86,7 +91,7 @@ export default {
 
   transition: color 0.5s, background 0.5s;
 }
-#contact button:hover {
+#contact input[type='submit']:hover {
   color: var(--purple);
   background: #fff;
 }

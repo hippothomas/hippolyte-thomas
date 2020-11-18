@@ -8,9 +8,9 @@
         </a>
       </div>
       <div class="date">{{ comp.date }}</div>
-      <div class="desc">
+      <!--<div class="desc">
         {{ comp.desc }}
-      </div>
+      </div>-->
     </div>
     <div class="line"></div>
   </div>
