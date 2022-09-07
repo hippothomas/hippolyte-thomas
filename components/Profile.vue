@@ -30,9 +30,8 @@
         </div>
       </div>
       <div class="description">
-        Passionné d'informatique, je suis actuellement étudiant en 4ème année à
-        l'EPSI pour passer le titre RNCP de Niveau VII : Expert en Informatique
-        et Système d’Information.
+        Passionné d'informatique, je suis actuellement diplômé du titre RNCP de
+        Niveau VII : Expert en Informatique et Système d’Information.
       </div>
       <nuxt-link to="/a-propos" class="more">En savoir plus</nuxt-link>
     </div>

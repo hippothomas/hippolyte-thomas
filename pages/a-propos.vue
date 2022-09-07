@@ -8,14 +8,13 @@
     <div class="section">
       <h2>Présentation</h2>
       <p>
-        Passionné d'informatique, je suis actuellement étudiant en 4ème année à
-        l'EPSI pour passer le titre RNCP de Niveau VII : Expert en Informatique
-        et Système d’Information. Durant cette formation, je suis en alternance
-        en tant que Concepteur Développeur d'Applications chez
-        <a href="https://www.web-ia.com/" target="_blank">Web IA</a>, agence web
-        nantaise, dans laquelle je participe à de multiples missions de
-        conception et de développement de sites wordpress pour nos clients. J'ai
-        auparavant aussi travaillé en tant de Développeur Web chez
+        Passionné d'informatique, je suis actuellement diplômé du titre RNCP de
+        Niveau VII : Expert en Informatique et Système d’Information. Durant
+        cette formation, j'étais en alternance en tant que Développeur Backend
+        PHP chez <a href="https://www.web-ia.com/" target="_blank">Web IA</a>,
+        agence web nantaise, dans laquelle j'ai participé à de multiples
+        missions de conception et de développement de sites wordpress pour nos
+        clients. J'ai auparavant aussi travaillé en tant de Développeur Web chez
         <a href="https://www.ae2agence.com/" target="_blank">AE2Agence</a>.
       </p>
       <Chronology />

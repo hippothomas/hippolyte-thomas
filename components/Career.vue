@@ -17,7 +17,7 @@ export default {
       items: [
         {
           id: 2,
-          title: "Concepteur développeur d'applications",
+          title: "Développeur Backend PHP",
           company: {
             name: 'Web IA',
             link: 'https://www.web-ia.com/',
