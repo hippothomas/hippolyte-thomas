@@ -3,7 +3,9 @@
 		<div class="links">
 			<nuxt-link to="/">Accueil</nuxt-link>
 			<nuxt-link to="/projets">Projets</nuxt-link>
-			<!-- <a href="CV.pdf" target="_blank">CV</a> -->
+			<a href="https://files.hippolyte-thomas.fr/CV.pdf" target="_blank">
+				CV
+			</a>
 			<a href="mailto:contact@hippolyte-thomas.fr">Contact</a>
 		</div>
 	</div>
