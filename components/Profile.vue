@@ -1,41 +1,23 @@
 <template>
 	<div class="container">
-		<div class="photo"></div>
+		<div
+			class="photo"
+			:style="{
+				backgroundImage: `url(${picture})`,
+			}"
+		></div>
 		<div class="text">
-			<div class="name">Hippolyte Thomas</div>
+			<div class="name">
+				{{ about_me.name }}
+			</div>
 			<div class="wr-wrapper">
-				<div class="work">Développeur FullStack</div>
+				<div class="work">{{ about_me.job }}</div>
 				<div class="res">
-					<a
-						href="https://www.linkedin.com/in/hippolyte-thomas/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							src="~/static/assets/linkedin.png"
-							alt="LinkedIn"
-						/>
-					</a>
-					<a
-						href="https://github.com/hippothomas"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img src="~/static/assets/github.png" alt="GitHub" />
-					</a>
-					<a
-						href="https://gitlab.com/hippolyte.thomas"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img src="~/static/assets/gitlab.png" alt="GitLab" />
-					</a>
+					<Social :data="social" v-for="social in socials" :key="social.id" />
 				</div>
 			</div>
 			<div class="description">
-				Passionné d'informatique, je suis actuellement diplômé du titre
-				RNCP de Niveau VII : Expert en Informatique et Système
-				d’Information.
+				{{ about_me.description }}
 			</div>
 			<a href="mailto:contact@hippolyte-thomas.fr" class="more">
 				Contactez-moi
@@ -43,6 +25,36 @@
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			mediaUrl: process.env.MEDIA_URL,
+			about_me: {
+				name: null,
+				job: null,
+				description: null,
+				picture: {
+					filename: null,
+					caption: null,
+				},
+			},
+			picture: '',
+			socials: []
+		};
+	},
+	created() {
+		this.$axios.get(`/api/about-me`).then(response => {
+			this.about_me = response.data[0];
+			this.picture = this.mediaUrl + this.about_me.picture.fileName;
+		});
+		this.$axios.get(`/api/socials`).then(response => {
+			this.socials = response.data;
+		});
+	},
+};
+</script>
 
 <style scoped>
 .container {
@@ -54,7 +66,8 @@
 }
 
 .container .photo {
-	background: url('../static/assets/profile.jpg') 100% 100%;
+	background-position-x: 100%;
+	background-position-y: 100%;
 	background-size: 100%;
 	object-fit: contain;
 	width: 212px;
@@ -82,9 +95,6 @@
 .res {
 	height: 21px;
 	margin-top: 5px;
-}
-.res a img {
-	height: 23px;
 }
 
 .description {

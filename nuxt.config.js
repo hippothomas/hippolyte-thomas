@@ -22,7 +22,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Passionné d'informatique, je suis actuellement une formation de développeur à l'EPSI en alternance chez Web IA.",
+          "Passionné d'informatique, je suis actuellement développeur Freelance.",
       },
     ],
     link: [
@@ -67,6 +67,11 @@ export default {
     '@nuxt/content',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+	'@nuxtjs/axios',
+    '@nuxtjs/proxy',
+  ],
+  buildModules: [
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Content module configuration
@@ -94,5 +99,11 @@ export default {
   robots: {
     Disallow: ['/admin'],
     Sitemap: `${process.env.WEBSITE_URL}/sitemap.xml`,
+  },
+  axios: {
+  	proxy: true
+  },
+  proxy: {
+  	"/api/": `${process.env.API_URL}/`
   },
 };
