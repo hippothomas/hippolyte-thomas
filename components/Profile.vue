@@ -37,7 +37,9 @@
 				RNCP de Niveau VII : Expert en Informatique et Système
 				d’Information.
 			</div>
-			<nuxt-link to="/a-propos" class="more">En savoir plus</nuxt-link>
+			<a href="mailto:contact@hippolyte-thomas.fr" class="more">
+				Contactez-moi
+			</a>
 		</div>
 	</div>
 </template>

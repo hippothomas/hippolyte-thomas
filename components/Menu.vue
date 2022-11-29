@@ -1,8 +1,8 @@
 <template>
 	<div id="navigation">
 		<div class="links">
-			<!-- <nuxt-link to="/">Projets</nuxt-link> -->
-			<nuxt-link to="/a-propos">À propos</nuxt-link>
+			<nuxt-link to="/">Accueil</nuxt-link>
+			<nuxt-link to="/projets">Projets</nuxt-link>
 			<!-- <a href="CV.pdf" target="_blank">CV</a> -->
 			<a href="mailto:contact@hippolyte-thomas.fr">Contact</a>
 		</div>
