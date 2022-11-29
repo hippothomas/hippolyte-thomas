@@ -13,13 +13,17 @@
 			<div class="wr-wrapper">
 				<div class="work">{{ about_me.job }}</div>
 				<div class="res">
-					<Social :data="social" v-for="social in socials" :key="social.id" />
+					<Social
+						:data="social"
+						v-for="social in socials"
+						:key="social.id"
+					/>
 				</div>
 			</div>
 			<div class="description">
 				{{ about_me.description }}
 			</div>
-			<a href="mailto:contact@hippolyte-thomas.fr" class="more">
+			<a href="mailto:contact@hippolyte-thomas.fr" class="btn btn-purple">
 				Contactez-moi
 			</a>
 		</div>
@@ -41,7 +45,7 @@ export default {
 				},
 			},
 			picture: '',
-			socials: []
+			socials: [],
 		};
 	},
 	created() {
@@ -100,21 +104,6 @@ export default {
 .description {
 	margin-top: 5px;
 	margin-bottom: 25px;
-}
-
-a.more {
-	background-color: var(--purple);
-	padding: 10px 21px;
-	border: 1px solid var(--purple);
-	border-radius: 20px;
-	color: #fff;
-	text-decoration: none;
-
-	transition: color 0.5s, background 0.5s;
-}
-a.more:hover {
-	color: var(--purple);
-	background: #fff;
 }
 
 @media only screen and (max-width: 700px) {

@@ -25,3 +25,23 @@ h1, h2, h3, h4, h5, h6 {
 .page-leave-to {
   opacity: 0;
 }
+
+/* Buttons */
+a.btn {
+	background-color: #000;
+	border: 1px solid #000;
+	padding: 10px 21px;
+	border-radius: 20px;
+	color: #fff;
+	text-decoration: none;
+
+	transition: color 0.5s, background 0.5s;
+}
+a.btn:hover {
+	color: var(--purple);
+	background: #fff;
+}
+a.btn-purple {
+	background-color: var(--purple);
+	border: 1px solid var(--purple);
+}

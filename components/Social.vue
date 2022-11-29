@@ -1,9 +1,5 @@
 <template>
-	<a
-		:href="data.link"
-		target="_blank"
-		rel="noopener noreferrer"
-	>
+	<a :href="data.link" target="_blank" rel="noopener noreferrer">
 		<img :src="mediaUrl + data.picture.fileName" :alt="data.name" />
 	</a>
 </template>
