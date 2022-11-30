@@ -48,14 +48,13 @@ export default {
 			socials: [],
 		};
 	},
-	created() {
-		this.$axios.get(`/api/about-me`).then(response => {
-			this.about_me = response.data[0];
-			this.picture = this.mediaUrl + this.about_me.picture.fileName;
-		});
-		this.$axios.get(`/api/socials`).then(response => {
-			this.socials = response.data;
-		});
+	async fetch() {
+		const am = await this.$axios.get(`/api/about-me`);
+		this.about_me = am.data[0];
+		this.picture = this.mediaUrl + this.about_me.picture.fileName;
+
+		const s = await this.$axios.get(`/api/socials`);
+		this.socials = s.data;
 	},
 };
 </script>

@@ -80,6 +80,6 @@ export default {
 }
 .slick-prev::before,
 .slick-next::before {
-	color: #000;
+	color: #000 !important;
 }
 </style>
