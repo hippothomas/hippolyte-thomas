@@ -10,16 +10,16 @@
 
 <script>
 export default {
+	async asyncData({ $axios }) {
+		const result = await $axios.get(`/api/projects`);
+		return {
+			projects: result.data,
+		};
+	},
 	data() {
 		return {
 			mediaUrl: process.env.MEDIA_URL,
-			projects: [],
 		};
-	},
-	created() {
-		this.$axios.get(`/api/projects`).then(response => {
-			this.projects = response.data;
-		});
 	},
 };
 </script>
