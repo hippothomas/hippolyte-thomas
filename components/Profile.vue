@@ -34,7 +34,6 @@
 export default {
 	data() {
 		return {
-			mediaUrl: process.env.MEDIA_URL,
 			about_me: {
 				name: null,
 				job: null,
@@ -51,7 +50,7 @@ export default {
 	async fetch() {
 		const am = await this.$axios.get(`/api/about-me`);
 		this.about_me = am.data[0];
-		this.picture = this.mediaUrl + this.about_me.picture.fileName;
+		this.picture = this.$config.mediaUrl + this.about_me.picture.fileName;
 
 		const s = await this.$axios.get(`/api/socials`);
 		this.socials = s.data;
