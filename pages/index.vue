@@ -10,8 +10,7 @@ export default {
 		return {
 			script: [
 				{
-					src:
-						'https://identity.netlify.com/v1/netlify-identity-widget.js',
+					src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
 				},
 			],
 		};

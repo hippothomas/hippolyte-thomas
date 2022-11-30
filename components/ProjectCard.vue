@@ -92,4 +92,13 @@ export default {
 	justify-content: flex-end;
 	margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 700px) {
+	.project-card {
+		flex-direction: column;
+	}
+	.project-card .image {
+		max-width: 100%;
+	}
+}
 </style>

@@ -37,7 +37,7 @@
 	padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 730px) {
 	.header-logo {
 		left: 10px;
 	}
