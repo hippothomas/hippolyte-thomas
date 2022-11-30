@@ -30,7 +30,6 @@ export default {
 	},
 	data() {
 		return {
-			mediaUrl: process.env.MEDIA_URL,
 			picture: '',
 			caption: '',
 		};
@@ -38,7 +37,7 @@ export default {
 	created() {
 		if (this.data.pictures.length > 0) {
 			this.picture =
-				process.env.MEDIA_URL + this.data.pictures[0].fileName;
+				this.$config.mediaUrl + this.data.pictures[0].fileName;
 			this.caption = this.data.pictures[0].caption;
 		}
 	},

@@ -105,4 +105,7 @@ export default {
   proxy: {
   	"/api/": `${process.env.API_URL}/`
   },
+  publicRuntimeConfig: {
+    mediaUrl: process.env.MEDIA_URL || ''
+  }
 };

@@ -16,11 +16,6 @@ export default {
 			projects: result.data,
 		};
 	},
-	data() {
-		return {
-			mediaUrl: process.env.MEDIA_URL,
-		};
-	},
 };
 </script>
 

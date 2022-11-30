@@ -7,7 +7,7 @@
 				<img
 					v-for="picture in project.pictures"
 					:key="picture.id"
-					:src="mediaUrl + picture.fileName"
+					:src="$config.mediaUrl + picture.fileName"
 					:alt="picture.caption"
 				/>
 			</Slick>
@@ -43,7 +43,6 @@ export default {
 	},
 	data() {
 		return {
-			mediaUrl: process.env.MEDIA_URL,
 			slickOptions: {
 				slidesToShow: 1,
 				dots: true,
