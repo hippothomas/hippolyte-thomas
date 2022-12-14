@@ -16,7 +16,7 @@
     "@nuxtjs/proxy": "^2.1.0",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
-    "jquery": "^3.6.1",
+    "jquery": "^3.6.2",
     "nuxt": "^2.14.0",
     "vue-slick": "^1.2.0"
   },
